@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" id="html">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css?t=1633056206206">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+    <title>Document</title>
+  </head>
+  <body id="body">
+    <header class="header" id="header"> 
+      <div class="logo"><img src="./assets/img/logo.png" alt="web logo"></div>
+      <div class="topbar" id="topbar">
+        <div class="topbar__icon" data-type="login"><i class="fa fa-user"></i><span>Log in</span></div>
+        <div class="topbar__icon" data-type="register"><i class="fa fa-user-plus"></i><span>Register</span></div>
+        <div class="toggle-menu"> 
+          <div class="toggle-menu__icon" id="toggle-menu"></div>
+        </div>
+      </div>
+      <nav class="main-nav" id="main-nav">
+        <ul class="main-menu" id="main-menu">
+          <li class="main-menu__item"><a class="main-menu__link" href="/">home</a>
+          </li>
+          <li class="main-menu__item"><a class="main-menu__link" href="content.html">content</a>
+          </li>
+          <li class="main-menu__item"><a class="main-menu__link" href="about.html">about</a>
+          </li>
+          <li class="main-menu__item"><a class="main-menu__link main-menu__link--active" href="contact.html">contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div class="sidebar" id="sidebar"> </div>
+    <main class="main"> 
+      <h1 class="title">Contact </h1>
+      <div class="contact"> 
+        <div class="contact__form"> 
+          <form class="form-contact">
+            <div class="form-contact__fields">
+              <label class="form-contact__label" for="name">Name</label>
+              <input class="form-contact__input" type="text" name="name" placeholder="name">
+              <label class="form-contact__label" for="email">Email</label>
+              <input class="form-contact__input" type="text" name="email" placeholder="email">
+              <label class="form-contact__label" for="subject">Subject</label>
+              <input class="form-contact__input" type="text" name="subject" placeholder="subject">
+            </div>
+            <div class="form-contact__field"> 
+              <label class="form-contact__label" for="name">Message</label>
+              <textarea class="form-contact__textarea" name="message" placeholder="write a message"></textarea>
+            </div>
+          </form>
+          <div class="form-contact__submit">
+            <input class="form__submit" type="submit" value="Send">
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="social-media"> 
+        <div class="help-texts">  
+          <div class="help-texts__item"> <a class="help-texts__link" href="#">Related Sites</a>
+            <p class="help-texts__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          </div>
+          <div class="help-texts__item"> <a class="help-texts__link" href="#">For Advertisers</a>
+            <p class="help-texts__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          </div>
+          <div class="help-texts__item"> <a class="help-texts__link" href="#">Help</a>
+            <p class="help-texts__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+          </div>
+        </div>
+        <div class="social">
+          <div class="social__icon"><i class="fab fa-twitter-square"></i><i class="fab fa-twitter-square"></i></div>
+          <div class="social__icon"><i class="fab fa-instagram"></i><i class="fab fa-instagram"></i></div>
+          <div class="social__icon"><i class="fab fa-youtube-square"></i><i class="fab fa-youtube-square"></i></div>
+          <div class="social__icon"><i class="fab fa-pinterest-square"></i><i class="fab fa-pinterest-square"></i></div>
+        </div>
+      </div>
+      <div class="logo-policy">
+        <div class="logo-footer"><img src="./assets/img/logo.png" alt="web logo"></div>
+        <div class="policy"> 
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut earum reprehenderit placeat perferendis eligendi.</p><a class="help-texts__link" href="#">Terms of Service </a><a class="help-texts__link" href="#">Privacy Policy   </a>
+        </div>
+      </div>
+    </footer>
+    <script src="js/scripts-min.js?t=1633056206206"> </script>
+  </body>
+</html>
