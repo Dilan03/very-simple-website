@@ -1,0 +1,94 @@
+.slide-images {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 200px;
+  align-items: center;
+  overflow: hidden;
+  
+  @include laptop {
+    height: 400px;
+    grid-column: 2 / 4;
+    grid-row: 2 / span 1;
+  }
+
+  .slider {
+    display: flex;
+    padding: 0;
+    list-style: none;
+    height: 100%;
+    width: 400%;
+    margin-left: 0%;
+    transition: margin-left 1s;
+    position: absolute;
+    
+    &__item {
+      img {
+        height: 200px;
+        width: 100vw;
+        @include laptop {
+          width: 80vw;
+          height: 400px;
+        }
+      }
+    }
+  }
+
+}
+
+.controls{
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  font-size: 3rem;
+  width: 100%;
+  z-index: 150;
+  color: rgb(255, 255, 255);
+  i {
+    opacity: 0.5;
+    cursor: pointer;
+  }
+
+  @include laptop {
+    width: 100%;
+    font-size: 5rem;
+  }
+}
+
+.controls:hover {
+  color: rgb(202, 218, 218);
+}
+
+.square{
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: space-between;
+  width: 120px;
+  height: 30px;
+  z-index: 160;
+  left: 5%;
+  top: 40%;
+
+  &__item {
+    display: flex;
+    font-size: 1rem;
+    background-color: rgb(75, 75, 75);
+    width: 20px;
+    height: 20px;
+    @include laptop {
+      width: 30px;
+      height: 30px;
+    }
+  }
+  @include laptop {
+    width: 220px;
+    height: 30px;
+  }
+}
+
+
+
+.square-active {
+  background-color: blue;
+}

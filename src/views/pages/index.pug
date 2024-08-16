@@ -1,0 +1,40 @@
+extends ../templates/template
+block menu
+    - pageActive = 'home'
+    include ../includes/main-menu
+block slide
+  .slide-images#slide-images
+    ul#slider.slider
+      li.slider__item
+        img(src="assets/images/img1.jpg", alt="imagen 1")   
+      li.slider__item
+        img(src="assets/images/img2.jpg", alt="imagen 2")   
+      li.slider__item
+        img(src="assets/images/img3.jpg", alt="imagen 3")   
+      li.slider__item
+        img(src="assets/images/img1.jpg", alt="imagen 4")   
+    .controls
+      i.fas.fa-chevron-circle-left#prev
+      i.fas.fa-chevron-circle-right#next
+    .square 
+      .square__item#square-item1
+      .square__item#square-item2
+      .square__item#square-item3
+      .square__item#square-item4
+block title 
+  h1.title Home
+  .content-box 
+    h2.content-box__title Articulo 1
+    p.content-box__text Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut nulla fuga repellendus magnam! Eius, deleniti unde vitae officiis placeat consequuntur nam quam sit ut nisi fugit. Sequi dolor doloribus totam!
+    .content-box__link
+      a(href="display-content.html#article-1") Ver
+  .content-box 
+    h2.content-box__title Articulo 2
+    p.content-box__text Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut nulla fuga repellendus magnam! Eius, deleniti unde vitae officiis placeat consequuntur nam quam sit ut nisi fugit. Sequi dolor doloribus totam!
+    .content-box__link
+      a(href="display-content.html#article-2") Ver
+  .content-box 
+    h2.content-box__title Articulo 3
+    p.content-box__text Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut nulla fuga repellendus magnam! Eius, deleniti unde vitae officiis placeat consequuntur nam quam sit ut nisi fugit. Sequi dolor doloribus totam!
+    .content-box__link
+      a(href="display-content.html#article-3") Ver

@@ -1,0 +1,11 @@
+.logo {
+  position: absolute;
+  width: 50px;
+  top: 13px;
+  left: 15px;
+  z-index: 1000;
+  @include laptop {
+    top: 5px;
+    left: 200px;
+  }
+}

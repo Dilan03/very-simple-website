@@ -1,0 +1,22 @@
+extends ../templates/template
+block menu
+    - pageActive = 'contact'
+    include ../includes/main-menu
+block title 
+  h1.title Contact 
+block main 
+  .contact 
+    .contact__form 
+      form.form-contact
+        .form-contact__fields
+          label(for="name").form-contact__label Name
+          input(type="text" name="name", placeholder="name").form-contact__input
+          label(for="email").form-contact__label Email
+          input(type="text" name="email" placeholder="email").form-contact__input
+          label(for="subject").form-contact__label Subject
+          input(type="text" name="subject" placeholder="subject").form-contact__input
+        .form-contact__field 
+          label(for="name").form-contact__label Message
+          textarea(name="message" placeholder="write a message").form-contact__textarea
+      .form-contact__submit
+        input(type="submit" value="Send").form__submit

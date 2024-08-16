@@ -1,0 +1,14 @@
+.sidebar {
+  border: 3px solid rgb(121, 42, 42);
+  margin: 6px;
+
+  @include mobile {
+    display: none;
+  }
+
+  @include laptop {
+    display: auto;
+    grid-column: 3 / 4;
+    grid-row: 3 / 4;
+  }
+}

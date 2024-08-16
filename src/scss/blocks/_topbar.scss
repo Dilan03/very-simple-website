@@ -1,0 +1,59 @@
+.topbar {
+  position: relative;
+  display: flex;
+  height: 10vh;
+  width: 100vw;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0;
+  z-index: 100;
+
+  .toggle-menu {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 80px;
+    height: 100%;
+    right: 0;
+    &__icon {
+      position: relative;
+      cursor: pointer;
+      background-color: lightcoral;
+      height: 50px;
+      width: 50px;
+      left: 65px;
+
+      @include laptop {
+        display: none;
+      }
+    }
+  }
+
+  &__icon {
+    position: relative;
+    left: 30px;
+    cursor: pointer;
+    padding-left: 1rem;
+
+    i {
+      padding-right: 0.7rem;
+      @include laptop {
+        padding-right: 1rem;
+      }
+    }
+
+    @include laptop {
+      padding: 0 4rem;
+    }
+  }
+
+  @include laptop {
+    width: 80%;
+    height: 60px;
+    left: 10%;
+    background-color: brown;
+    justify-content: flex-end;
+    border-bottom: 1px solid #eee;
+    
+  }
+}

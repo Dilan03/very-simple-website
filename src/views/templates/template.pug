@@ -1,0 +1,65 @@
+include ../config/config
+doctype html
+html(lang="en")#html
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    link(rel="stylesheet" href="css/styles.css")
+    link(rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous")
+    title Document
+  body#body
+    header#header.header 
+      .logo
+        img(src="./assets/img/logo.png", alt="web logo")     
+      #topbar.topbar
+        .topbar__icon(data-type="login")
+          i.fa.fa-user
+          span Log in
+        .topbar__icon(data-type="register")
+          i.fa.fa-user-plus
+          span Register
+        .toggle-menu 
+          #toggle-menu.toggle-menu__icon
+      block menu
+    block slide
+    #sidebar.sidebar 
+
+    main.main 
+      block title 
+      block main
+      
+    footer.footer
+      .social-media 
+        .help-texts   
+          .help-texts__item 
+            a(href="#").help-texts__link Related Sites
+            p.help-texts__text Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          .help-texts__item 
+            a(href="#").help-texts__link For Advertisers
+            p.help-texts__text Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          .help-texts__item 
+            a(href="#").help-texts__link Help
+            p.help-texts__text Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+        .social
+          .social__icon
+              i.fab.fa-twitter-square
+              i.fab.fa-twitter-square
+          .social__icon
+              i.fab.fa-instagram
+              i.fab.fa-instagram
+          .social__icon
+              i.fab.fa-youtube-square
+              i.fab.fa-youtube-square
+          .social__icon
+              i.fab.fa-pinterest-square
+              i.fab.fa-pinterest-square
+      .logo-policy
+        .logo-footer
+          img(src="./assets/img/logo.png", alt="web logo")
+        .policy 
+          p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut earum reprehenderit placeat perferendis eligendi.
+          a(href="#").help-texts__link Terms of Service 
+          a(href="#").help-texts__link Privacy Policy   
+    block scripts 
+    script(src="js/scripts-min.js") 
